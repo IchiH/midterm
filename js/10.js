@@ -8,11 +8,11 @@ function toOrdinalNumber(a){
     return a + "rd"
   }if(4 <= a && a < 20){
     return a + "th"
-  }if(a > 20 && a % (a-1) == 1){
+  }if(a > 20 && a % 10 == 1){
     return a + "st"
-  }else if(a > 20 && a % (a-2) == 2){
+  }else if(a > 20 && a % 10 == 2){
     return a + "nd"
-  }else if(a > 20 && a % (a-3) == 3){
+  }else if(a > 20 && a % 10 == 3){
     return a + "rd"
   }
   return a + "th"
